@@ -1,6 +1,15 @@
 //declare function getSide
 const getSide = (message) => {
-  return 5;
+  //prompt user with message
+  const userInput = prompt(message);
+
+  //convert input to string
+  const userInputNumber = parseInt(userInput, 10);
+
+  //check if its number
+  if (!Number.isNaN(userInputNumber)) {
+    return userInputNumber;
+  }
 };
 
 //declare function validateSides
